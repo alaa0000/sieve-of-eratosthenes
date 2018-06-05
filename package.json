@@ -12,6 +12,7 @@
 	},
 	"scripts": {
 		"start": "cd ./web-api && start npm start && cd ../web-app && start npm start",
-		"test": "cd ./web-api && start npm test && cd ../web-app && start npm test"
+		"test": "cd ./web-api && start npm test && cd ../web-app && start npm test",
+		"update": "npm i && cd ./web-api && npm i && cd ../web-app && npm i"
 	}
 }
