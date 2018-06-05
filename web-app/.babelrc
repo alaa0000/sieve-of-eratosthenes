@@ -1,0 +1,12 @@
+{
+	"presets": ["es2015", "stage-0",  "react", "stage-2", "env"],
+	plugins: [
+		"transform-class-properties",
+		"transform-export-extensions"
+	],
+	"env": {
+		"test": {
+			"plugins": ["dynamic-import-node"]
+		}
+	}
+}

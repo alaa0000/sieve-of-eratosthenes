@@ -1,0 +1,19 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"jest": true
+	},
+	"extends": "airbnb",
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"spread": true
+		}
+	},
+	"rules": {
+		"react/jsx-filename-extension": [ "off" ],
+		"linebreak-style": [ "off" ]
+	}
+}

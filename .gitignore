@@ -1,0 +1,8 @@
+# default ignore settings
+.vs
+.idea
+node_modules
+npm-debug.log*
+lib
+.vscode
+.DS_Store
