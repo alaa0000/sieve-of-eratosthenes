@@ -3,7 +3,6 @@ import {
   combineEpics,
   ofType,
 } from 'redux-observable';
-import { toInteger } from 'lodash';
 import {
   catchError,
   map,
@@ -11,7 +10,6 @@ import {
   switchMap,
   takeUntil,
   repeat,
-  filter,
   mapTo,
 } from 'rxjs/operators';
 import * as actions from '../actions';
@@ -30,7 +28,6 @@ export const setValueEpic =
   action$ =>
     action$.pipe(
       ofType(actions.SET_VALUE),
-      filter(action => toInteger(action.payload) > 0),
       mapTo(actions.getMerdianPrimeNumbersRequest()),
     );
 

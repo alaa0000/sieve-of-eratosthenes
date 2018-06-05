@@ -10,7 +10,8 @@ const assert = require('assert');
 const getMedianPrimeNumbersAssert = (value) => {
   assert(!isNil(value), 'Value must be provided.');
   assert(!isNaN(value), 'Value must be numeric.'); // eslint-disable-line no-restricted-globals
-  assert(toInteger(value) > 0, 'Value must be positive.');
+  assert(!(toInteger(value) < 0), 'Value must be positive.');
+  assert(toInteger(value) > 2, 'Value must be great than 2.');
 
   return value;
 };
