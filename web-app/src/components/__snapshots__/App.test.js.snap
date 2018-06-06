@@ -267,7 +267,7 @@ exports[`App component should renders without crashing 1`] = `
           color="inherit"
           variant="title"
         >
-          Title
+          TouchBistro Full Stack Challenge
         </WithStyles(Typography)>
       </WithStyles(Toolbar)>
     </WithStyles(AppBar)>

@@ -26,24 +26,4 @@ describe('setValueEpic', () => {
     ts.expectObservable(outputAction).toBe(expectedMarble, expectedValues);
     ts.flush();
   });
-
-  it('should not dispatch any action when a negative value is provided', () => {
-    const inputValues = {
-      a: actions.setValue('-123'),
-    };
-
-    const expectedValues = {};
-
-    const inputMarble = '   a';
-    const expectedMarble = '';
-
-    const ts = new TestScheduler((actual, expected) => {
-      expect(actual).toEqual(expected);
-    });
-    const action$ = new ActionsObservable(ts.createHotObservable(inputMarble, inputValues));
-    const outputAction = epics.setValueEpic(action$);
-
-    ts.expectObservable(outputAction).toBe(expectedMarble, expectedValues);
-    ts.flush();
-  });
 });
