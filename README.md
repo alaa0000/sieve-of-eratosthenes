@@ -1,4 +1,4 @@
-# TouchBistro Full Stack Challenge
+# Sieve of Eratosthenes Full Stack Challenge
 
 * To install the npm modules, run: `npm run update`<br />
 * To start the application, run: `npm start`<br />
